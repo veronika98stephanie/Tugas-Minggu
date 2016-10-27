@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1477485725 source:h:\jawaban buku hlm 802\hlm 802 no 1\main.cpp
+	<iostream>
+	<cstdlib>
+	"date.h"
+	"date.cpp"
+
+1477485759 h:\jawaban buku hlm 802\hlm 802 no 1\date.h
+
+1477485757 h:\jawaban buku hlm 802\hlm 802 no 1\date.cpp
+	<iostream>
+	<cstdlib>
+	"date.h"
+

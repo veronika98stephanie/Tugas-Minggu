@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1477475484 source:h:\jawaban buku hlm 802\hlm 802 no 2\main.cpp
+	<iostream>
+	<iomanip>
+	"main.h"
+
+1477475467 h:\jawaban buku hlm 802\hlm 802 no 2\main.h
+	<iostream>
+
