@@ -23,7 +23,7 @@ public:
         this->hour = hour;
         this->day = day;
         cout << "Hours : " << this->hour << endl;
-        cout << "Days : " << this->day << endl;
+        cout << "Days : " << getDay() << endl;
     }
 
     double getHour ()
@@ -33,8 +33,8 @@ public:
 
     double getDay ()
     {
-        double temp = hour/8;
-        return temp;
+        day = hour/8;
+        return day;
     }
 
     NumDays operator + (const NumDays &right)
@@ -60,19 +60,21 @@ public:
 
     NumDays operator ++ ()
     {
-        cout << "++hour = " << ++hour << endl;
+        cout << "++hour = " << ++hour;
+        cout << " day " << getDay() << endl;
 
         return *this;
     }
     NumDays operator ++ (int)
     {
         NumDays temp(hour, day);
-        cout << "hour++ = " << hour++ << endl;
+        cout << "hour++ = " << hour++ << " day " << temp.getDay() << endl;
         return *this;
     }
     NumDays operator -- ()
     {
-        cout << "--hour = " << --hour << endl;
+        cout << "--hour = " << --hour;
+        cout << " day " << getDay() << endl;
 
         return *this;
     }
@@ -80,7 +82,7 @@ public:
     NumDays operator -- (int)
     {
         NumDays temp(hour, day);
-        cout << "hour-- = " << hour-- << endl;
+        cout << "hour-- = " << hour-- << " day " << temp.getDay() << endl;
         return *this;
     }
 };
@@ -100,11 +102,11 @@ int main()
 
     today = today + today1 ;
 
-    cout << "Today = today + today1 " << today.getDay()<< endl;
+    cout << "Today = today + today1 " << " Day " << today.getDay() << " Hour " << today.getHour() << endl;
 
     today = today - today1 ;
 
-    cout << "Today = today - today1 " << today.getDay()<< endl;
+    cout << "Today = today - today1 " << " Day " << today.getDay() << " Hour " << today.getHour() << endl;
 
     today++;
 
