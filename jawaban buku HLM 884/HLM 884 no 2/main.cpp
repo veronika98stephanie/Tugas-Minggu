@@ -22,7 +22,6 @@ public:
 
     void print()
     {
-        int a;
         int dayOfMonth [12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         int totalDay = 365;
         int position = 0;
@@ -31,7 +30,7 @@ public:
         {
             if (day <= totalDay)
             {
-                position = j;
+                position = j-1;
                 totalDay -= dayOfMonth[j];
             }
         }
